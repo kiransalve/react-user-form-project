@@ -1,0 +1,42 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid rgb(230, 211, 211);
+  max-width: 50%;
+  border-radius: 15px;
+}
+
+.userform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+input,
+label,
+button {
+  margin-bottom: 20px;
+}
+input,
+button {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+label {
+  color: beige;
+  font-weight: 600;
+}
+button {
+  background-color: rgb(230, 211, 211);
+  border: 1px solid #000;
+  font-weight: 800;
+}
+button:hover {
+  background-color: rgb(31, 79, 79);
+  color: beige;
+  border: 1px solid rgb(230, 211, 211);
+  cursor: pointer;
+}
