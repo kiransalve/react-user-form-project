@@ -1,14 +1,15 @@
 import React from 'react'
+import "./UserList.css"
 
 const UsersList = (props) => {
     return (
         <div>
             <ul>
-                {props.users.map((user) => {
-                    <li>
-                        {user.user-name}
+                {props.users.map((user) => (
+                    <li key={user.id}>
+                        {user.name} is {user.age} years old
                     </li>
-                })}
+                ))}
             </ul>
         </div>
     )
