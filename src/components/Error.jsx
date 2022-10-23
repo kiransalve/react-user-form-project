@@ -3,8 +3,7 @@ import "./Error.css";
 
 const Error = (props) => {
     return (
-
-        < div >
+        <React.Fragment>
             <div className="backdrop" onClick={props.onConfirm} />
             <div className="modal">
                 <header className="header">
@@ -16,10 +15,9 @@ const Error = (props) => {
                 <footer className="actions">
                     <button onClick={props.onConfirm}>Okay</button>
                 </footer>
-        </div>
-    </div >
-
-            )
+            </div>
+        </React.Fragment >
+    )
 }
 
 export default Error

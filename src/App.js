@@ -5,11 +5,11 @@ import UsersList from "./components/UsersList";
 const App = () => {
   const [userList, setUserList] = useState([]);
 
-  const addUserFunction = (userName, userAge) => {
+  const addUserFunction = (userName, userAge, userCollege) => {
     setUserList((previous) => {
       return [
         ...previous,
-        { name: userName, age: userAge, id: Math.random().toString() },
+        { name: userName, age: userAge, college:userCollege, id: Math.random().toString() },
       ];
     });
   };
